@@ -22,6 +22,8 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.settings.awaken.preferences.SystemSettingMasterSwitchPreference;
+
 import com.android.internal.logging.nano.MetricsProto;
 
 import java.util.ArrayList;
@@ -33,6 +35,43 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         addPreferencesFromResource(R.xml.status_bar_settings);
+    }
+
+    @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.REVENGEOS;
+    }
+
+}
+
+ private void updateMasterPrefs() {
+        mNetworkTraffic = (SystemSettingMasterSwitchPreference) findPreference(NETWORK_TRAFFIC);
+        mNetworkTraffic.setChecked((Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_STATE, 0) == 1));
+        mNetworkTraffic.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object objValue) {
+		if (preference == mNetworkTraffic) {
+            boolean value = (Boolean) objValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0);
+            return true;
+		}
+        return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateMasterPrefs();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        updateMasterPrefs();
     }
 
     @Override
