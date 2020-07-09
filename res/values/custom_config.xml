@@ -33,4 +33,9 @@
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false"></string>
 
+    <!-- FOD recognizing animation -->
+    <bool name="config_showFODAnimationSettings">false</bool>
+
+    <!-- Screen off FOD -->
+    <bool name="config_supportScreenOffFod">false</bool>
 </resources>
