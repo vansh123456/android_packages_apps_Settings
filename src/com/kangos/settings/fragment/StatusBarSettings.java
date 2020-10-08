@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 RevengeOS
+ * Copyright (C) 2019 KangOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.revengeos.settings.fragment;
+package com.kangos.settings.fragment;
 
 import android.os.Bundle;
 import android.content.Context;
@@ -37,8 +37,6 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.android.settings.awaken.preferences.SystemSettingMasterSwitchPreference;
-
 import com.android.internal.logging.nano.MetricsProto;
 
 import java.util.ArrayList;
@@ -47,9 +45,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 public class StatusBarSettings extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener { 
-        
-   private static final String NETWORK_TRAFFIC = "network_traffic_state";
+        OnPreferenceChangeListener {
+
+    private static final String NETWORK_TRAFFIC = "network_traffic_state";
 
    private SystemSettingMasterSwitchPreference mNetworkTraffic;
 
@@ -82,7 +80,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.REVENGEOS;
+        return MetricsProto.MetricsEvent.KANGOS;
     }
 
 }

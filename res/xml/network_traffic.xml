@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 RevengeOS
-
+     Copyright (C) 2019 Havoc-OS
+     Copyright (C) 2019 Derp-Caf
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
       http://www.apache.org/licenses/LICENSE-2.0
-
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -26,13 +24,6 @@
         android:entryValues="@array/network_traffic_location_values"
         android:defaultValue="0" />
 
-    <com.android.settings.awaken.preferences.SystemSettingListPreference
-        android:key="network_traffic_mode"
-        android:title="@string/network_traffic_mode_title"
-        android:entries="@array/network_traffic_mode_entries"
-        android:entryValues="@array/network_traffic_mode_values"
-        android:defaultValue="0" />
-
     <com.android.settings.awaken.preferences.SystemSettingSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
@@ -40,6 +31,13 @@
         settings:min="0"
         android:defaultValue="0"
         settings:units="KB/s" />
+
+    <com.android.settings.awaken.preferences.SystemSettingListPreference
+        android:key="network_traffic_mode"
+        android:title="@string/network_traffic_mode_title"
+        android:entries="@array/network_traffic_mode_entries"
+        android:entryValues="@array/network_traffic_mode_values"
+        android:defaultValue="0" />
 
     <com.android.settings.awaken.preferences.SystemSettingSeekBarPreference
         android:key="network_traffic_refresh_interval"

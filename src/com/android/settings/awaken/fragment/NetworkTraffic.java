@@ -1,5 +1,7 @@
 /*
  * Copyright (C) 2020 Havoc-OS
+ * Copyright (C) 2020 Derp-Caf
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -86,7 +88,7 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
 
         mLocation.setEnabled(enabled);
         mIndicatorMode.setEnabled(enabled);
-        mThreshold.setEnabled(enabled);
+        mThreshold.setEnabled(isChecked);
         mInterval.setEnabled(enabled);
     }
 
@@ -98,9 +100,9 @@ public class NetworkTraffic extends SettingsPreferenceFragment implements
         mSwitchBar.setActivated(isChecked);
 
         mLocation.setEnabled(isChecked);
-        mIndicatorMode.setEnabled(isChecked);
+        mIndicatorMode.setEnabled(enabled);
         mThreshold.setEnabled(isChecked);
-        mInterval.setEnabled(isChecked);
+        mInterval.setEnabled(enabled);
     }
 
     @Override

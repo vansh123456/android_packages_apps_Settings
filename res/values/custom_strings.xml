@@ -20,13 +20,14 @@
     <string name="network_traffic_state_summary">Show network speed in the status bar</string>
     <string name="network_traffic_location_title">Location</string>
     <string name="network_traffic_statusbar">Status bar</string>
+    <string name="network_traffic_qs_header">QS header</string>
+    <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
     <string name="network_traffic_mode_title">Display mode</string>
     <string name="network_traffic_dynamic">Dynamic</string>
     <string name="network_traffic_download">Download</string>
     <string name="network_traffic_upload">Upload</string>
-    <string name="network_traffic_qs_header">QS header</string>
-    <string name="network_traffic_autohide_threshold_title">Auto-hide threshold</string>
-   <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+    <string name="network_traffic_refresh_interval_title">Refresh interval</string>
+
 
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>

@@ -30,9 +30,9 @@
 
      <com.android.settings.awaken.preferences.SystemSettingMasterSwitchPreference
             android:key="network_traffic_state"
-            android:fragment="com.android.settings.awaken.fragment.NetworkTraffic"
+            android:fragment="com.derp.caf.fragments.NetworkTraffic"
             android:title="@string/network_traffic_state_title"
             android:summary="@string/network_traffic_state_summary"
             android:defaultValue="false" />
- </PreferenceCategory>
+
 </PreferenceScreen>
