@@ -50,4 +50,11 @@
             android:entryValues="@array/fod_pressed_color_values"
             android:defaultValue="@*android:integer/config_fod_pressed_color" />
 
+    <!-- FOD recognizing animation -->
+    <com.revengeos.settings.preference.SystemSettingSwitchPreference
+            android:key="fod_recognizing_animation"
+            android:title="@string/fod_recog_animation"
+            android:summary="@string/fod_recog_animation_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
