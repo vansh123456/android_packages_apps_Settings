@@ -41,8 +41,8 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.revengeos.support.preferences.CustomSeekBarPreference;
-import com.revengeos.support.preferences.SystemSettingSwitchPreference;
+import com.revengeos.settings.preference.CustomSeekBarPreference;
+import com.revengeos.settings.preference.SystemSettingSwitchPreference;
 import com.android.settings.Utils;
 import android.util.Log;
 
@@ -56,7 +56,7 @@ public class Traffic extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private CustomSeekBarPreference mThreshold;
-    private SystemSettingSwitchPreference mNetMonitor;
+    private RestrictedSwitchPreference mNetMonitor;
 
     @Override
     public void onCreate(Bundle icicle) {
