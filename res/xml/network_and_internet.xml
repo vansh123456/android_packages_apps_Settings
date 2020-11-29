@@ -54,7 +54,7 @@
 
     <Preference
         android:key="traffic"
-        android:fragment="com.android.settings.arrow.Traffic"
+        android:fragment="com.android.settings.revengeos.Traffic"
         android:order="-10"
         android:icon="@drawable/ic_traffic"
         android:title="@string/traffic_title"
