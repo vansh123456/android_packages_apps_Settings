@@ -47,4 +47,14 @@
         android:defaultValue="false"
         settings:controller="com.android.settings.security.screenlock.ScreenOffFodPreferenceController" />
 
+       <!-- FOD pressed color -->
+    <com.revengeos.settings.preference.SystemSettingListPreference
+            android:key="fod_color"
+            android:dialogTitle="@string/fod_pressed_color_title"
+            android:title="@string/fod_pressed_color_title"
+            android:summary="%s"
+            android:entries="@array/fod_pressed_color_entries"
+            android:entryValues="@array/fod_pressed_color_values"
+            android:defaultValue="@*android:integer/config_fod_pressed_color" />
+
 </PreferenceScreen>
